@@ -747,8 +747,8 @@ if [ "$ENABLE_ALL_ADLISTS_FOR_ANALYSIS" -eq 1 ];
 
         if [ "$AUTOMATIC_MODE" -eq 1 ];
             then
-                FURTHER_ACTION=1
-                echo "  [i]  Running in automatic mode, keeping current adlist configuration."
+                FURTHER_ACTION=3
+                echo "  [i]  Running in automatic mode, enable the minimal number of adlists that cover all the domains that would have been blocked."
         fi
 
         while [[ $FURTHER_ACTION != [123] ]]; do
